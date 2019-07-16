@@ -3,7 +3,7 @@ import { // eslint-disable-line import/no-extraneous-dependencies
   withKnobs, radios,
 } from '@storybook/addon-knobs';
 
-const stories = storiesOf('Select', module);
+const stories = storiesOf('Selects', module);
 stories.addDecorator(withKnobs);
 
 stories.add('select', () => {
@@ -12,6 +12,7 @@ stories.add('select', () => {
     'is-success': 'is-success',
     'is-warning': 'is-warning',
     'is-error': 'is-error',
+    'is-dark': 'is-dark',
   }, '');
 
   return `
